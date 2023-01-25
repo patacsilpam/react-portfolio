@@ -4,16 +4,63 @@
     --dark-blue:#141726;
     --white:#FFFFFF;
     --light-blue:#253058;
+    --gray:#B6B7C8;
 }
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; ;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
 }
 
 .body{
     background: var(--dark-blue);
     height:100vh;
 }
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.logo > h1{
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--white);
+}
 
+.navLinks{
+    display: flex;
+    flex-direction: row;
+}
+.navLinks li{
+    margin: 1rem 2.5rem;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.navLinks li a{
+    color: var(--gray);
+    display: inline-block;
+    position: relative;
+}
+.navLinks li a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--blue-violet);
+    transform-origin: center;
+    transition: transform .2s ease-out;
+}
+.navLinks li a:hover:after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
+.navLinks li a:hover{
+    color: var(--white);
+    transition: 1s ease-out;
+}
