@@ -12,17 +12,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    color: var(--white);
 }
 
 .body{
     background: var(--dark-blue);
     height:100vh;
 }
+.route-con{
+    margin: 0 auto;
+    width: 70%;
+}
 .navBar{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 1rem;
+    
+   
 }
 .logo > h1{
     letter-spacing: 2px;
@@ -61,6 +67,90 @@
     transform-origin: center;
 }
 .navLinks li a:hover{
-    color: var(--white);
+    color: var(--blue-violet);
     transition: 1s ease-out;
+}
+.menu-burger{
+    cursor: pointer;
+    display: none;
+    background: transparent;
+    margin: 0;
+}
+.menu-burger>div{
+    height: 4px;
+    width: 40px;
+    border-radius: 2px;
+    margin: .5rem;
+    background: var(--white);
+}
+/*about me style*/
+.parent-about{
+   margin-top: 10%;
+}
+.hello-con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+.hello-con > p{
+    font-size: 2.5rem;
+}
+.hello-con > strong{
+    font-size: 2rem;
+}
+.about-me-con {
+    line-height: 70px;
+}
+.about-me-con > h1{
+    font-size: 2.5rem;
+}
+.about-me-con > h1 > span{
+    color: var(--blue-violet);
+}
+.about-me-con > p{
+    color: var(--gray);
+    width: 350px;
+    line-height: 25px;
+}
+.about-me-con > a {
+    background: transparent;
+    color: var(--blue-violet);
+    border: 1px solid var(--blue-violet);
+    padding: .4rem;
+    font-size: 1rem;
+}
+
+.about-me-con > a:hover {
+    background: var(--light-blue);
+    color: var(--white);
+}
+@media (max-width:768px) {
+    .route-con{
+        margin: 0 auto;
+        width: 90%;
+        background: rgb(42, 150, 141);
+    }
+    .logo>h1,.menu-burger{
+        padding: 1rem;
+    }
+    .navBar{
+        justify-content: space-between;
+    }
+    .navLinks .active{
+        display: flex;
+    }
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        padding: 0;
+        position: absolute;
+        top: 70px;
+        text-align: center;
+        width:100%;
+    }
+    .menu-burger{
+        display: block;
+    }
+  
 }
