@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 :root{
     --blue-violet:#5A82FC;
     --dark-blue:#141726;
@@ -94,10 +95,12 @@
 
 }
 .hello-con > p{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
 }
-.hello-con > strong{
-    font-size: 2rem;
+.hello-con > small{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 .about-me-con {
     line-height: 70px;
@@ -117,6 +120,7 @@
     background: transparent;
     color: var(--blue-violet);
     border: 1px solid var(--blue-violet);
+    box-shadow:-1px 2px 4px 1px rgba(45, 77, 173, 0);
     padding: .4rem;
     font-size: 1rem;
 }
