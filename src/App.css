@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
 :root{
     --blue-violet:#5A82FC;
@@ -14,27 +13,29 @@
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     color: var(--white);
+    list-style: none;
 }
 
-.body{
+body{
     background: var(--dark-blue);
-    height:100vh;
 }
 .route-con{
     margin: 0 auto;
     width: 70%;
+    height: 100%;
 }
 .navBar{
+    margin: 0 auto;
+    width: 70%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-   
+    justify-content: space-between;
+    align-items: center;  
 }
 .logo > h1{
     letter-spacing: 2px;
-    font-weight: 600;
     color: var(--white);
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .navLinks{
@@ -43,8 +44,8 @@
 }
 .navLinks li{
     margin: 1rem 2.5rem;
-    font-size: 1.3rem;
-    list-style: none;
+    font-size: 1rem;
+   
 }
 .navLinks li a{
     color: var(--gray);
@@ -74,8 +75,6 @@
 .menu-burger{
     cursor: pointer;
     display: none;
-    background: transparent;
-    margin: 0;
 }
 .menu-burger>div{
     height: 4px;
@@ -84,48 +83,52 @@
     margin: .5rem;
     background: var(--white);
 }
-/*about me style*/
-.parent-about{
-   margin-top: 10%;
+/*home section style*/
+
+.home-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-65%, -50%);  
+    width: 50%;
+   
 }
-.hello-con{
+.home-section > div{
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    line-height: 70px;
 
 }
-.hello-con > p{
-    font-size: 1.5rem;
+.home-section > div > span{
+    font-size: 2rem;
 }
-.hello-con > small{
+.home-section > div > small{
     font-size: 1.5rem;
     font-weight: 100;
     letter-spacing: 1px;
 }
-.about-me-con {
-    line-height: 70px;
+.home-section > div > h1{
+    font-size: 3.5rem;
+    letter-spacing: 1px;
 }
-.about-me-con > h1{
-    font-size: 2.5rem;
-}
-.about-me-con > h1 > span{
+.home-section > div > h1 > span{
     color: var(--blue-violet);
 }
-.about-me-con > p{
+.home-section > div > p{
     color: var(--gray);
-    width: 350px;
-    line-height: 25px;
+    width: 450px;
+    line-height: 30px;
+    font-size: 1.1rem;
 }
-.about-me-con > a {
-    background: transparent;
+.home-section  > a {
+    padding: .7rem;
     color: var(--blue-violet);
-    border: 1px solid var(--blue-violet);
+    border: 2px solid var(--blue-violet);
     box-shadow:-1px 2px 4px 1px rgba(45, 77, 173, 0);
-    padding: .4rem;
-    font-size: 1rem;
+    
 }
 
-.about-me-con > a:hover {
+.home-section >  a:hover {
     background: var(--light-blue);
     color: var(--white);
 }
@@ -139,7 +142,8 @@
         padding: 1rem;
     }
     .navBar{
-        justify-content: space-between;
+        width: 100%;
+        justify-content:space-between;
     }
     .navLinks .active{
         display: flex;
@@ -147,14 +151,37 @@
     .navLinks {
         display: none;
         flex-direction: column;
+        justify-content: center;
         padding: 0;
         position: absolute;
         top: 70px;
         text-align: center;
         width:100%;
+        height: 100vh;
+        background:#1b233f;
+        z-index: 9999;
     }
     .menu-burger{
         display: block;
     }
-  
+    .home-section{
+        transform: translate(-50%,-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .home-section > div > p{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+/*For  Smartphones*/
+@media (max-width:468px) {
+    .home-section > div > h1{
+        font-size: 2rem;
+      
+    }
+    .home-section > div > p{
+        width: 100%;
+    }
 }
