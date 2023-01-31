@@ -1,30 +1,24 @@
 import React from 'react'
-import data from '../../data.json'
-import resume from '../../assets/pdf/resume.pdf'
+import img from '../../assets/profile.jpg'
 export const About = () => {
   return (
-    <div className="parent-about">
-      <div className="hello-con">
-        <p>&#128075;</p>
-        <strong>Hello,</strong>
-      </div>
-      <div className="about-me-con">
-        <h1>I'm <span>Pam Patacsil</span></h1>
-        <p>I specialized in building web  
-        & mobile applications based in Philippines.</p>
-        <a href={resume} className='btn-download-cv' target="_blank">DOWNLOAD CV</a>
-      </div>
-      {/*data.map(pdf => {
-          return (
-            <article>
-              <small>{pdf.title}</small>
-            
-            <p>{pdf.write}</p>
-            <img src={pdf.image} width={250} height={300} />
-            <a href={pdf.file}>Download</a>
-            </article>
-          );
-      })*/}
-    </div>
+    <section className='about' id='about'>
+        <div className='about-section'>
+          <h1>About Me</h1>
+          <p>
+            I am a <b>fourth-year student taking up a Bachelor of Science
+            in Information Technology</b> at Urdaneta City University.
+          </p>
+          <p>
+            My main focus these days is to explore the field, and to find opportunities that will help 
+            me grow and enhance my skills, especially 
+            on building profitable responsive websites
+            and web applications.
+          </p>
+        </div>
+        <div className='about-section'>
+          <img src={img} alt="" />
+        </div>
+      </section>
   )
 }
