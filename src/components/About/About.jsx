@@ -8,12 +8,12 @@ export const About = () => {
           <p>
             I am a <b>fourth-year student taking up a Bachelor of Science
             in Information Technology</b> at Urdaneta City University.
+            At uni, I work on projects such as websites, web applications, and mobile applications.
           </p>
           <p>
-            My main focus these days is to explore the field, and to find opportunities that will help 
-            me grow and enhance my skills, especially 
-            on building profitable responsive websites
-            and web applications.
+            Currently, I am seeking an internship role where I can assist in building web 
+            and mobile applications using my technical background and understanding of 
+            various technology areas.
           </p>
         </div>
         <div className='about-section'>
