@@ -26,14 +26,15 @@ body{
 .navBar-fixed{
     position: fixed;
     background: var(--dark-blue);
-    width: 70%;
+
+    width: 100%;
     z-index: 9999;
    
 }
 .navBar{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 1rem 0;
 }
 .logo > h1{
@@ -172,7 +173,7 @@ body{
     display: block;
     margin: 0 auto;
     box-shadow: -5px 10px 31px 0px rgba(46, 40, 79, 0.291);
-    position: relative;
+    
 }
 @media (max-width:768px) {
     .route-con{
@@ -216,18 +217,31 @@ body{
         text-align: center;
         margin: 0 auto;
     }
+    .home-section > div > h1,.about>.about-section > h1{
+        font-size: 2rem;
+      
+    }
     .about{
         flex-direction: column;
+        justify-content: flex-start;
+    }
+    .about>.about-section > h1,.about > .about-section > p{
+       text-align: center;
+        
+    }
+    .about > .about-section > img{
+        width: 250px;
+        height: 250px;
+        
     }
 }
 /*For  Smartphones*/
 /* http url  -- https://github.com/patacsilpam/react-portfolio.git*/
 @media (max-width:468px) {
-    .home-section > div > h1{
-        font-size: 2rem;
-      
-    }
     .home-section > div > p{
         width: 100%;
+    }
+    .about>.about-section > h1{
+        padding: 1rem;
     }
 }
