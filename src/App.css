@@ -91,7 +91,7 @@ body{
     background: var(--white);
 }
 /*home section style*/
-.home,.about{
+.home,.about,.project,.skills{
     height: 100vh;
 }
 
@@ -175,7 +175,52 @@ body{
     box-shadow: -5px 10px 31px 0px rgba(46, 40, 79, 0.291);
     
 }
+.project > h1{
+    font-size: 3rem;
+}
+.project > .project-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   flex-wrap: wrap;
+}
+.project > .project-section > div{
+    margin: 1rem 0;
+    flex-basis: 40%;
+    height: 250px;
+    background: var(--blue-violet); 
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.skills > .skills-section > h1{
+   font-size: 3rem;
+}
+.skills > .skills-section > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+    justify-content: flex-start;
+}
+.skills > .skills-section > div >div{
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: flex-start;
+    flex:1 0 30%;
+   padding: 1rem;
+    margin: 1rem;
+}
+.skills > .skills-section > div >div > p{
+    width: 150px;
+    margin: 0 1rem;
+}
 @media (max-width:768px) {
+    .project{
+        height: fit-content;
+    }
     .route-con{
         margin: 0 auto;
         width: 90%;
@@ -217,9 +262,11 @@ body{
         text-align: center;
         margin: 0 auto;
     }
-    .home-section > div > h1,.about>.about-section > h1{
+    .home-section > div > h1,
+    .about>.about-section > h1,
+    .project > h1,
+    .skills > .skills-section > h1{
         font-size: 2rem;
-      
     }
     .about{
         flex-direction: column;
@@ -231,8 +278,28 @@ body{
     }
     .about > .about-section > img{
         width: 250px;
-        height: 250px;
-        
+        height: 250px; 
+    }
+   
+    .project > .project-section{
+        justify-content:center;
+    }
+    .project > h1{
+        text-align: center;
+    }
+    .project > .project-section > div{
+        flex-basis: 70%;
+    }
+    .skills > .skills-section > h1{
+        text-align: center;
+    }
+    .skills > .skills-section > div >div > p{
+        width: 55px;
+        margin: 0 .5rem;
+    }
+    .skills > .skills-section > div  > div{
+       flex: 1 0 25%;
+       justify-content: flex-start;
     }
 }
 /*For  Smartphones*/
