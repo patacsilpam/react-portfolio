@@ -2,7 +2,7 @@
 :root{
     --blue-violet:#5A82FC;
     --dark-blue:#141726;
-    --white:#FFFFFF;
+    --white:#E1E1E1;
     --light-blue:#253058;
     --gray:#B6B7C8;
 }
@@ -19,6 +19,11 @@
 body{
     background: var(--dark-blue);
 }
+hr{
+    background: var(--gray);
+    color: var(--gray);
+    opacity: .1;
+}
 .route-con{
     margin: 0 auto;
     width: 70%;
@@ -26,10 +31,8 @@ body{
 .navBar-fixed{
     position: fixed;
     background: var(--dark-blue);
-
     width: 100%;
     z-index: 9999;
-   
 }
 .navBar{
   display: flex;
@@ -91,8 +94,13 @@ body{
     background: var(--white);
 }
 /*home section style*/
-.home,.about,.project,.skills{
+.home{
     height: 100vh;
+}
+.about,.skills,.contact{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
 }
 
 .home-section{
@@ -175,6 +183,7 @@ body{
     box-shadow: -5px 10px 31px 0px rgba(46, 40, 79, 0.291);
     
 }
+/*Task component stye*/
 .project > h1{
     font-size: 3rem;
 }
@@ -190,12 +199,15 @@ body{
     height: 250px;
     background: var(--blue-violet); 
 }
+/*Skills component style*/
 .skills{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
     margin: 2rem 0 0;
 }
-.skills > div> h1{
-    font-size: 3rem;
-}
+
 .skills > .skills-section {
     display: flex;
     flex-direction: row;
@@ -208,13 +220,61 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex: 1 0 30%;
+    justify-content: center;
+    width: 30%;
     margin: 2rem 0;
 }
 .skills > .skills-section > div > p{
     width: 150px;
     margin: 0 1rem;
+    color: var(--gray);
 }
+.contact{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contact > h1{
+    font-size: 3rem;
+    color: var(--white);
+}
+.contact-section > div > p {
+    width: 70%;
+    padding: 1rem;
+    margin: 0 auto;
+    color: var(--gray);
+
+}
+.contact-section > div > a{
+    background: var(--light-blue);
+    border: 2px solid var(--blue-violet);
+    padding: 1rem;
+    margin-top: 50px;
+    color: var(--white);
+}
+.contact-section > div > a:hover{
+    background: #354580;
+  }
+
+.footer{
+    text-align: center;
+}
+.footer > div{
+ margin: 1rem 0;
+}
+.footer > div a{
+    padding: 1rem;
+    
+    font-size: 1.3rem;
+}
+.footer > div a ,.footer > div p{
+    color: var(--white);
+}
+.footer > div  p{
+    margin: 1rem 0;
+}
+
 @media (max-width:768px) {
     .project{
         height: fit-content;
@@ -222,7 +282,6 @@ body{
     .route-con{
         margin: 0 auto;
         width: 90%;
-      
     }
     .logo>h1,.menu-burger{
         padding: 1rem;
