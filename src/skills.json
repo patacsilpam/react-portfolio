@@ -1,0 +1,47 @@
+[
+	{
+		"id":"1",
+		"img":"/src/assets/tech-stack/html.png",
+		"tool":"HTML5"
+	},
+	{
+		"id":"2",
+		"img":"/src/assets/tech-stack/css.png",
+		"tool":"CSS3"
+	},
+	{
+		"id":"3",
+		"img":"/src/assets/tech-stack/javascript.png",
+		"tool":"JavaScriptE6+"
+	},
+	{
+		"id":"4",
+		"img":"/src/assets/tech-stack/bootstrap.png",
+		"tool":"Bootstrap"
+	},
+	{
+		"id":"5",
+		"img":"/src/assets/tech-stack/react.png",
+		"tool":"React"
+	},
+	{
+		"id":"6",
+		"img":"/src/assets/tech-stack/php.png",
+		"tool":"PHP"
+	},
+	{
+		"id":"7",
+		"img":"/src/assets/tech-stack/mysql.png",
+		"tool":"MySQL"
+	},
+	{
+		"id":"8",
+		"img":"/src/assets/tech-stack/java.png",
+		"tool":"Java"
+	},
+	{
+		"id":"9",
+		"img":"/src/assets/tech-stack/android-studio.png",
+		"tool":"Android Studio"
+	}
+]

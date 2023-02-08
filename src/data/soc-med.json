@@ -1,0 +1,32 @@
+[
+    {
+        "id":"1",
+        "socMed":"Facebook",
+        "link":"",
+        "img":"/src/assets/soc-med/facebook.png"
+    },
+    {
+        "id":"2",
+        "socMed":"Instagram",
+        "link":"",
+        "img":"/src/assets/soc-med/instagram.png"
+    },
+    {
+        "id":"3",
+        "socMed":"Twitter",
+        "link":"",
+        "img":"fa-brands fa-twitter"
+    },
+    {
+        "id":"4",
+        "socMed":"Github",
+        "link":"",
+        "img":"fa-brands fa-github"
+    },
+    {
+        "id":"5",
+        "socMed":"LinkedIn",
+        "link":"",
+        "img":"fa-brands fa-linkedin-in"
+    }
+]

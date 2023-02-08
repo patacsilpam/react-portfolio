@@ -1,5 +1,6 @@
 import React from 'react'
 import img from '../../assets/profile.jpg'
+import { Skills } from './Skills'
 export const About = () => {
   return (
     <section className='about' id='about'>

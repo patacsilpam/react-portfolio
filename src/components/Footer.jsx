@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFacebookF,faInstagram ,faTwitter,faLinkedin,faGithub } from '@fortawesome/free-brands-svg-icons';
 export const Footer = () => {
   return (
-    <section className='footer'>
+    <section className='footer' id='footer'>
         <div className="soc-med">
             <div>
                 <a href="https://www.facebook.com/pammpatacsil?mibextid=ZbWKwL" target='_blank'> <FontAwesomeIcon icon={faFacebookF} /></a>
