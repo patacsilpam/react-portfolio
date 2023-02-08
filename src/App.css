@@ -24,6 +24,9 @@ hr{
     color: var(--gray);
     opacity: .1;
 }
+.hide-navBar{
+    display: none;
+}
 .route-con{
     margin: 0 auto;
     width: 70%;
@@ -51,6 +54,7 @@ hr{
     display: flex;
     flex-direction: row;
 }
+
 .navLinks li{
     margin: 1rem 2.5rem;
     font-size: 1rem;
@@ -290,21 +294,20 @@ hr{
         width: 100%;
         justify-content:space-between;
     }
-    .navLinks .active{
-        display: flex;
-    }
+   
     .navLinks {
         display: none;
         flex-direction: column;
-        justify-content: center;
         padding: 0;
         position: absolute;
         top: 70px;
         text-align: center;
         width:100%;
-        height: 100vh;
         background:#1b233f;
         z-index: 9999;
+    }
+    .navLinks.active{
+        display: flex;
     }
     .menu-burger{
         display: block;
