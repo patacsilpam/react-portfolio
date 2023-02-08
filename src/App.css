@@ -24,23 +24,25 @@ hr{
     color: var(--gray);
     opacity: .1;
 }
-.hide-navBar{
-    display: none;
-}
 .route-con{
+    position: relative;
+   max-width: 960px;
     margin: 0 auto;
-    width: 70%;
+ 
 }
+
+/*navbar style*/
+/*
 .navBar-fixed{
     position: fixed;
     background: var(--dark-blue);
     width: 100%;
     z-index: 9999;
-}
+}*/
 .navBar{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 1rem 0;
 }
 .logo > h1{
@@ -100,56 +102,39 @@ hr{
 /*home section style*/
 .home{
     height: 100vh;
-}
-.about,.skills,.contact{
     display: flex;
-    flex-direction: column;
-    height: 70vh;
+    justify-content: flex-start;
+    align-items: center;
 }
-
-.home-section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-70%,-50%);
-    width: 50%;
+.home > div {
+    margin: -5rem 1rem;
+    margin-top: -5rem;
 }
-.home-section > div{
-    display: flex;
-    flex-direction: column;
-    line-height: 70px;
-
-}
-.home-section > div > span{
+.home > div > span {
     font-size: 2rem;
-}
-.home-section > div > small{
-    font-size: 1.5rem;
-    font-weight: 100;
     letter-spacing: 1px;
 }
-.home-section > div > h1{
-    font-size: 3.5rem;
+.home > div > h1{
+    font-size: 4.5rem;
     letter-spacing: 1px;
 }
-.home-section > div > h1 > span{
+.home> div > h1 > span{
     color: var(--blue-violet);
 }
-.home-section > div > p{
+.home > div > p{
     color: var(--gray);
-    width: 450px;
+    width: 500px;
     line-height: 30px;
     font-size: 1.1rem;
 }
-.home-section  > a {
+.home > div a {
     padding: .7rem;
+    margin-top: 1rem;
     color: var(--blue-violet);
     border: 2px solid var(--blue-violet);
     box-shadow:-1px 2px 4px 1px rgba(45, 77, 173, 0);
-    
 }
-
-.home-section >  a:hover {
+.home > div a:hover {
     background: var(--light-blue);
     color: var(--white);
 }
@@ -159,10 +144,12 @@ hr{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin: 10rem 0;
 }
 .about > .about-section{
     width: 100%;
     padding: 1rem;
+    margin: 1rem 0;
    
 }
 .about > .about-section > h1{
@@ -171,7 +158,6 @@ hr{
 }
 .about > .about-section > p,
 .about > .about-section >p> b{
-
     color: var(--gray);
 }
 .about > .about-section > p{
@@ -179,8 +165,8 @@ hr{
     margin: 1rem 0;
 }
 .about > .about-section > img{
-    width: 350px;
-    height: 350px;
+    width: 450px;
+    height: 450px;
     border-radius: 3px;
     display: block;
     margin: 0 auto;
@@ -234,30 +220,32 @@ hr{
     color: var(--gray);
 }
 .contact{
-    text-align: center;
+   
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    text-align: center;
+    height: 100vh;
 }
-
-.contact > h1{
+.contact > div > h1 {
     font-size: 3rem;
     color: var(--white);
 }
-.contact-section > div > p {
+.contact> div > p {
     width: 70%;
     padding: 1rem;
     margin: 0 auto;
     color: var(--gray);
 
 }
-.contact-section > div > a{
-    background: var(--light-blue);
-    border: 2px solid var(--blue-violet);
+.contact> div > a{
     padding: 1rem;
     margin-top: 50px;
+    background: var(--light-blue);
+    border: 2px solid var(--blue-violet);
     color: var(--white);
 }
-.contact-section > div > a:hover{
+.contact > div > a:hover{
     background: #354580;
   }
 
@@ -283,10 +271,7 @@ hr{
     .project{
         height: fit-content;
     }
-    .route-con{
-        margin: 0 auto;
-        width: 90%;
-    }
+    
     .logo>h1,.menu-burger{
         padding: 1rem;
     }
@@ -303,7 +288,7 @@ hr{
         top: 70px;
         text-align: center;
         width:100%;
-        background:#1b233f;
+        background:#222c4f10;
         z-index: 9999;
     }
     .navLinks.active{
@@ -312,33 +297,36 @@ hr{
     .menu-burger{
         display: block;
     }
-    .home-section{
-        transform: translate(-50%,-50%);
-        width: 100%;
+    .home{
         text-align: center;
+        justify-content: center;
     }
-    .home-section > div > p{
-        width: 50%;
-        text-align: center;
-        margin: 0 auto;
+    .home > div > p{
+     margin: 0 auto;
+        width: 80%;
     }
-    .home-section > div > h1,
+    .home > div > h1{
+        font-size: 4rem;
+    }
     .about>.about-section > h1,
     .project > h1,
     .skills >div >  h1{
-        font-size: 2rem;
+        font-size: 3rem;
     }
     .about{
         flex-direction: column;
         justify-content: flex-start;
     }
-    .about>.about-section > h1,.about > .about-section > p{
+    .about>.about-section > h1{
        text-align: center;
         
     }
+    .about > .about-section > p{
+        text-align: justify;
+     }
     .about > .about-section > img{
-        width: 250px;
-        height: 250px; 
+        width: 350px;
+        height: 350px; 
     }
    
     .project > .project-section{
@@ -357,13 +345,19 @@ hr{
     .skills  > .skills-section > div{
         width: 50%;
     }
+    .contact-section > div > p {
+        width: 100%;
+        text-align: justify;
+    
+    }
 }
 /*For  Smartphones*/
 /* http url  -- https://github.com/patacsilpam/react-portfolio.git*/
 @media (max-width:468px) {
-    .home-section > div > p{
-        width: 100%;
+    .home > div > h1{
+        font-size: 2rem;
     }
+   
     .about>.about-section > h1{
         padding: 1rem;
     }
