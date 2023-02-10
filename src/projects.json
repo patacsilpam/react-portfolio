@@ -1,0 +1,49 @@
+
+[
+    {
+        "id":1,
+        "title":"Tap&Eat",
+        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
+        "tools":"Java, Android Studio, Retrofit2, PHP, MySQL",
+        "img":"/src/assets/login.png",
+        "folder_icon":"",
+        "github_icon":""
+    },
+    {
+        "id":2,
+        "title":"RMS",
+        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
+        "tools":"PHP, MySQL, JavaScript, ChartJS",
+        "img":"/src/assets/react.svg",
+        "folder_icon":"faFolder",
+        "github_icon":""
+    },
+    {
+        "id":3,
+        "title":"Chatbot",
+        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
+        "tools":"PHP, MySQL, JavaScript",
+        "img":"/src/assets/react.svg",
+        "folder_icon":"",
+        "github_icon":""
+    },
+    {
+        "id":4,
+        "title":"Landing Page",
+        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
+        "tools":"HTML5, CSS3, JavaScript",
+        "img":"/src/assets/landing-page.png",
+        "link":"https://patacsilpam.github.io/restaurant-landing-page/home.html",
+        "folder_icon":"",
+        "github_link":"https://github.com/patacsilpam/restaurant-landing-page"
+    }
+    , {
+        "id":5,
+        "title":"Portfolio",
+        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
+        "tools":"ReactJS, CSS3",
+        "img":"/src/assets/react.svg",
+        "folder_icon":"",
+        "github_icon":""
+    }
+]
