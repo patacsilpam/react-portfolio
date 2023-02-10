@@ -184,10 +184,46 @@ hr{
    flex-wrap: wrap;
 }
 .project > .project-section > div{
-    margin: 1rem 0;
-    flex-basis: 40%;
-    height: 250px;
-    background: var(--blue-violet); 
+    display: grid;
+   place-items: center;
+    margin: 1rem;
+    flex-basis: 45%;
+    height: 270px;
+    background: rgba(37, 48, 88, 40%);
+    position: relative;
+}
+.project-section > div > img {
+    position: absolute;
+   height: 350px;
+   padding: 5rem;
+}
+.project-section  > div > .img-overlay{
+    background:rgba(37, 48, 88, 96%);
+    position: absolute;
+    top:0;
+    height:100%;
+    width: 100%;
+    opacity: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: var(--gray);
+}
+.project-section > div > .img-overlay:hover{
+    opacity: 1;
+    transition: .5s all ease-in-out;
+}
+.project-section > div > .img-overlay > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.img-overlay p {
+    color: #B6B7C8;
+    font-size: .9rem;
+    font-weight: 100;
+    text-align: justify;
 }
 /*Skills component style*/
 .skills{
@@ -338,7 +374,10 @@ hr{
     .project > .project-section > div{
         flex-basis: 70%;
     }
-  
+    .project-section > div > img {
+       
+       height: 300px;
+    }
     .skills > div > h1{
         text-align: center;
     }
