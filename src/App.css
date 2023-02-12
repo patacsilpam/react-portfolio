@@ -176,26 +176,38 @@ hr{
 /*Task component stye*/
 .project > h1{
     font-size: 3rem;
+    margin: 0 1rem;
+    text-align: left;
+    color: var(--white);
 }
 .project > .project-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
    flex-wrap: wrap;
+  
 }
 .project > .project-section > div{
     display: grid;
-   place-items: center;
+    place-items: center;
     margin: 1rem;
-    flex-basis: 45%;
-    height: 270px;
-    background: rgba(37, 48, 88, 40%);
+    flex-basis: 46%;
+    height: 250px;
+    background: #4f62a922;
     position: relative;
+    opacity: 0.9;
+    border-radius: 1px;
+    
+ 
 }
 .project-section > div > img {
     position: absolute;
-   height: 350px;
-   padding: 5rem;
+    padding: 5rem;
+    margin: 0 auto;
+    height: 350px;
+    object-fit: cover;
+ 
+  
 }
 .project-section  > div > .img-overlay{
     background:rgba(37, 48, 88, 96%);
@@ -399,5 +411,11 @@ hr{
    
     .about>.about-section > h1{
         padding: 1rem;
+    }
+    .project-section > div > img {
+        padding: 2rem;
+       width: 100%;
+     
+      
     }
 }

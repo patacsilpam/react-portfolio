@@ -5,27 +5,27 @@
         "title":"Tap&Eat",
         "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
         "tools":"Java, Android Studio, Retrofit2, PHP, MySQL",
-        "img":"/src/assets/login.png",
-        "folder_icon":"",
-        "github_icon":""
+        "img":"/src/assets/tap-eat.png",
+        "live_url":"#",
+        "github_link":"https://github.com/patacsilpam/mang-macs-mobile-app"
     },
     {
         "id":2,
         "title":"RMS",
         "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
-        "tools":"PHP, MySQL, JavaScript, ChartJS",
-        "img":"/src/assets/react.svg",
-        "folder_icon":"faFolder",
-        "github_icon":""
+        "tools":"PHP, MySQL, JavaScript, ChartJS, Bootstrap CSS",
+        "img":"/src/assets/RMS.png",
+        "live_url":"#",
+        "github_link":"https://github.com/patacsilpam/mang-macs-admin-web-RMS"
     },
     {
         "id":3,
         "title":"Chatbot",
         "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
         "tools":"PHP, MySQL, JavaScript",
-        "img":"/src/assets/react.svg",
-        "folder_icon":"",
-        "github_icon":""
+        "img":"/src/assets/chatbot.png",
+        "live_url":"https://goolkeepers.000webhostapp.com/get-started.php",
+        "github_link":"https://github.com/patacsilpam/covid-19-chatbot"
     },
     {
         "id":4,
@@ -33,17 +33,8 @@
         "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
         "tools":"HTML5, CSS3, JavaScript",
         "img":"/src/assets/landing-page.png",
-        "link":"https://patacsilpam.github.io/restaurant-landing-page/home.html",
-        "folder_icon":"",
+        "live_url":"https://github.com/patacsilpam/covid-19-chatbot",
         "github_link":"https://github.com/patacsilpam/restaurant-landing-page"
     }
-    , {
-        "id":5,
-        "title":"Portfolio",
-        "description":"An android application that consists of online food ordering and table reservation developed for Mang Macs Marinero Foodshop.",
-        "tools":"ReactJS, CSS3",
-        "img":"/src/assets/react.svg",
-        "folder_icon":"",
-        "github_icon":""
-    }
+ 
 ]
