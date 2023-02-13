@@ -12,8 +12,7 @@ export const About = () => {
             At uni, I work on projects such as websites, web applications, and mobile applications.
           </p>
           <p>
-            Currently, I am seeking an internship role where I can assist in building web 
-            and mobile applications using my technical background and understanding of 
+            Currently, I am seeking an internship role where I can assist in building software using my technical background and understanding of 
             various technology areas.
           </p>
         </div>

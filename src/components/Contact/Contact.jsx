@@ -6,9 +6,7 @@ export const Contact = () => {
     <section className='contact' id='contact'>
         <div>
             <h1>Get in touch</h1>
-            <p>Currently, I am looking for opportunities and accepting freelance projects. 
-              If you think I am a good asset, kindly send me a message.
-            </p><br />
+            <p>I would be happy to discuss my experiences with you more, write me an email or message me on LinkedIn!</p><br />
             <a href="mailto:pammpatacsil@gmail.com" className='email'>pammpatacsil@gmail.com</a>
         </div>
     </section>

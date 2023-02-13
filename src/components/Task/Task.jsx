@@ -1,6 +1,6 @@
 import React from 'react'
 import svg from '../../assets/react.svg'
-import projects from '../../projects.json';
+import projects from '../../data/projects.json';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

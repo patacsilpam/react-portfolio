@@ -1,5 +1,5 @@
 import React from 'react'
-import skills from '../../skills.json'
+import skills from '../../data/skills.json'
 import html from '../../assets/tech-stack/html.png'
 export const Skills = () => {
   return (
