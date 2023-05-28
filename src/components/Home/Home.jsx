@@ -1,5 +1,5 @@
 import React,{useRef,useEffect} from 'react'
-import resume from '../../assets/pdf/PATACSIL_PAMELA_RESUME.pdf'
+import resume from '../../assets/pdf/PATACSIL_PAMELA_M.pdf'
 //import gsap from 'gsap'
 /** const helloRef = useRef(null);
   useEffect(()=>{
